@@ -52,7 +52,7 @@ function renderGame() {
         isAlive = false
     }
     messageEl.textContent = message
-    if (hasBlackjack === true) {
+    if (isAlive === true) {
         player.chips += 10
     } else if (isAlive === false) {
         player.chips = player.chips - 5
