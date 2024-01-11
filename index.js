@@ -53,7 +53,7 @@ function renderGame() {
     }
     messageEl.textContent = message
     if (isAlive === true) {
-        player.chips += 5
+        player.chips += 8
     } else if (isAlive === false) {
         player.chips = player.chips - 15
     }
