@@ -52,7 +52,7 @@ function renderGame() {
         isAlive = false
     }
     messageEl.textContent = message
-    if (isAlive === true) {
+    if (isAlive === true && hasBlackJack == true) {
         player.chips += 50
     } else if (isAlive === false) {
         player.chips = player.chips - 15
@@ -66,7 +66,6 @@ function newCard() {
         let card = getRandomCard()
         sum += card
         cards.push(card)
-        player.chips = player.chips - 50
         renderGame()        
     }
 }
